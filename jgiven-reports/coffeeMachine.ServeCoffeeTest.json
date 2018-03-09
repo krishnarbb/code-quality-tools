@@ -1,0 +1,746 @@
+{
+  "className": "coffeeMachine.ServeCoffeeTest",
+  "name": "Serve Coffee",
+  "description": "In order to refresh myself\u003c/br\u003eas a customer\u003c/br\u003eI want coffee to be served",
+  "scenarios": [
+    {
+      "className": "coffeeMachine.ServeCoffeeTest",
+      "testMethodName": "an_empty_coffee_machine_cannot_serve_any_coffee",
+      "description": "an empty coffee machine cannot serve any coffee",
+      "tagIds": [],
+      "explicitParameters": [],
+      "derivedParameters": [],
+      "casesAsTable": false,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "an empty coffee machine",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "an empty coffee machine"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 3530348
+            },
+            {
+              "name": "I insert $ one euro coins",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "I insert"
+                },
+                {
+                  "value": "5",
+                  "argumentInfo": {
+                    "argumentName": "euros",
+                    "formattedValue": "5"
+                  }
+                },
+                {
+                  "value": "one euro coins"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 8056658
+            },
+            {
+              "name": "I press the coffee button",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "I press the coffee button"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 614327
+            },
+            {
+              "name": "an error should be shown",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "an error should be shown"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 45767
+            },
+            {
+              "name": "no coffee should be served",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "no coffee should be served"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 596978
+            }
+          ],
+          "explicitArguments": [],
+          "derivedArguments": [],
+          "status": "SUCCESS",
+          "success": true,
+          "durationInNanos": 53549456
+        }
+      ],
+      "durationInNanos": 53549456,
+      "executionStatus": "SUCCESS"
+    },
+    {
+      "className": "coffeeMachine.ServeCoffeeTest",
+      "testMethodName": "correct_messages_are_shown",
+      "description": "correct messages are shown",
+      "tagIds": [],
+      "explicitParameters": [
+        "coffees left",
+        "number of coins",
+        "message"
+      ],
+      "derivedParameters": [
+        "coffees left",
+        "number of coins",
+        "message"
+      ],
+      "casesAsTable": true,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "a coffee machine",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a coffee machine"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 33568,
+              "extendedDescription": "An empty coffee machine that is already turned on.\u003cbr\u003eThe coffee price is set to 2 EUR."
+            },
+            {
+              "name": "there are $ coffees left in the machine",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "there are"
+                },
+                {
+                  "value": "0",
+                  "argumentInfo": {
+                    "parameterName": "coffees left",
+                    "argumentName": "coffees",
+                    "formattedValue": "0"
+                  }
+                },
+                {
+                  "value": "coffees left in the machine"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 1293441,
+              "extendedDescription": "The number of coffees in the machine is set to the given value."
+            },
+            {
+              "name": "I insert $ one euro coins",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "I insert"
+                },
+                {
+                  "value": "0",
+                  "argumentInfo": {
+                    "parameterName": "number of coins",
+                    "argumentName": "euros",
+                    "formattedValue": "0"
+                  }
+                },
+                {
+                  "value": "one euro coins"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 30782
+            },
+            {
+              "name": "I press the coffee button",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "I press the coffee button"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 415660
+            },
+            {
+              "name": "the message $ is shown",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the message"
+                },
+                {
+                  "value": "Error: No coffees left",
+                  "argumentInfo": {
+                    "parameterName": "message",
+                    "argumentName": "message",
+                    "formattedValue": "Error: No coffees left"
+                  }
+                },
+                {
+                  "value": "is shown"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 1192653
+            }
+          ],
+          "explicitArguments": [
+            "0",
+            "0",
+            "Error: No coffees left"
+          ],
+          "derivedArguments": [
+            "0",
+            "0",
+            "Error: No coffees left"
+          ],
+          "status": "SUCCESS",
+          "success": true,
+          "durationInNanos": 5510666
+        },
+        {
+          "caseNr": 2,
+          "steps": [
+            {
+              "name": "a coffee machine",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a coffee machine"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 38556,
+              "extendedDescription": "An empty coffee machine that is already turned on.\u003cbr\u003eThe coffee price is set to 2 EUR."
+            },
+            {
+              "name": "there are $ coffees left in the machine",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "there are"
+                },
+                {
+                  "value": "0",
+                  "argumentInfo": {
+                    "parameterName": "coffees left",
+                    "argumentName": "coffees",
+                    "formattedValue": "0"
+                  }
+                },
+                {
+                  "value": "coffees left in the machine"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 711883,
+              "extendedDescription": "The number of coffees in the machine is set to the given value."
+            },
+            {
+              "name": "I insert $ one euro coins",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "I insert"
+                },
+                {
+                  "value": "1",
+                  "argumentInfo": {
+                    "parameterName": "number of coins",
+                    "argumentName": "euros",
+                    "formattedValue": "1"
+                  }
+                },
+                {
+                  "value": "one euro coins"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 28827
+            },
+            {
+              "name": "I press the coffee button",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "I press the coffee button"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 386754
+            },
+            {
+              "name": "the message $ is shown",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the message"
+                },
+                {
+                  "value": "Error: No coffees left",
+                  "argumentInfo": {
+                    "parameterName": "message",
+                    "argumentName": "message",
+                    "formattedValue": "Error: No coffees left"
+                  }
+                },
+                {
+                  "value": "is shown"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 612512
+            }
+          ],
+          "explicitArguments": [
+            "0",
+            "1",
+            "Error: No coffees left"
+          ],
+          "derivedArguments": [
+            "0",
+            "1",
+            "Error: No coffees left"
+          ],
+          "status": "SUCCESS",
+          "success": true,
+          "durationInNanos": 3660746
+        },
+        {
+          "caseNr": 3,
+          "steps": [
+            {
+              "name": "a coffee machine",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a coffee machine"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 32597,
+              "extendedDescription": "An empty coffee machine that is already turned on.\u003cbr\u003eThe coffee price is set to 2 EUR."
+            },
+            {
+              "name": "there are $ coffees left in the machine",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "there are"
+                },
+                {
+                  "value": "1",
+                  "argumentInfo": {
+                    "parameterName": "coffees left",
+                    "argumentName": "coffees",
+                    "formattedValue": "1"
+                  }
+                },
+                {
+                  "value": "coffees left in the machine"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 1582583,
+              "extendedDescription": "The number of coffees in the machine is set to the given value."
+            },
+            {
+              "name": "I insert $ one euro coins",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "I insert"
+                },
+                {
+                  "value": "0",
+                  "argumentInfo": {
+                    "parameterName": "number of coins",
+                    "argumentName": "euros",
+                    "formattedValue": "0"
+                  }
+                },
+                {
+                  "value": "one euro coins"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 50103
+            },
+            {
+              "name": "I press the coffee button",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "I press the coffee button"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 347522
+            },
+            {
+              "name": "the message $ is shown",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the message"
+                },
+                {
+                  "value": "Error: Insufficient money",
+                  "argumentInfo": {
+                    "parameterName": "message",
+                    "argumentName": "message",
+                    "formattedValue": "Error: Insufficient money"
+                  }
+                },
+                {
+                  "value": "is shown"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 567712
+            }
+          ],
+          "explicitArguments": [
+            "1",
+            "0",
+            "Error: Insufficient money"
+          ],
+          "derivedArguments": [
+            "1",
+            "0",
+            "Error: Insufficient money"
+          ],
+          "status": "SUCCESS",
+          "success": true,
+          "durationInNanos": 4399627
+        },
+        {
+          "caseNr": 4,
+          "steps": [
+            {
+              "name": "a coffee machine",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a coffee machine"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 32557,
+              "extendedDescription": "An empty coffee machine that is already turned on.\u003cbr\u003eThe coffee price is set to 2 EUR."
+            },
+            {
+              "name": "there are $ coffees left in the machine",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "there are"
+                },
+                {
+                  "value": "0",
+                  "argumentInfo": {
+                    "parameterName": "coffees left",
+                    "argumentName": "coffees",
+                    "formattedValue": "0"
+                  }
+                },
+                {
+                  "value": "coffees left in the machine"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 547131,
+              "extendedDescription": "The number of coffees in the machine is set to the given value."
+            },
+            {
+              "name": "I insert $ one euro coins",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "I insert"
+                },
+                {
+                  "value": "5",
+                  "argumentInfo": {
+                    "parameterName": "number of coins",
+                    "argumentName": "euros",
+                    "formattedValue": "5"
+                  }
+                },
+                {
+                  "value": "one euro coins"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 28657
+            },
+            {
+              "name": "I press the coffee button",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "I press the coffee button"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 183738
+            },
+            {
+              "name": "the message $ is shown",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the message"
+                },
+                {
+                  "value": "Error: No coffees left",
+                  "argumentInfo": {
+                    "parameterName": "message",
+                    "argumentName": "message",
+                    "formattedValue": "Error: No coffees left"
+                  }
+                },
+                {
+                  "value": "is shown"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 379831
+            }
+          ],
+          "explicitArguments": [
+            "0",
+            "5",
+            "Error: No coffees left"
+          ],
+          "derivedArguments": [
+            "0",
+            "5",
+            "Error: No coffees left"
+          ],
+          "status": "SUCCESS",
+          "success": true,
+          "durationInNanos": 2732807
+        },
+        {
+          "caseNr": 5,
+          "steps": [
+            {
+              "name": "a coffee machine",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a coffee machine"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 55796,
+              "extendedDescription": "An empty coffee machine that is already turned on.\u003cbr\u003eThe coffee price is set to 2 EUR."
+            },
+            {
+              "name": "there are $ coffees left in the machine",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "there are"
+                },
+                {
+                  "value": "1",
+                  "argumentInfo": {
+                    "parameterName": "coffees left",
+                    "argumentName": "coffees",
+                    "formattedValue": "1"
+                  }
+                },
+                {
+                  "value": "coffees left in the machine"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 843258,
+              "extendedDescription": "The number of coffees in the machine is set to the given value."
+            },
+            {
+              "name": "I insert $ one euro coins",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "I insert"
+                },
+                {
+                  "value": "5",
+                  "argumentInfo": {
+                    "parameterName": "number of coins",
+                    "argumentName": "euros",
+                    "formattedValue": "5"
+                  }
+                },
+                {
+                  "value": "one euro coins"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 46670
+            },
+            {
+              "name": "I press the coffee button",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "I press the coffee button"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 298058
+            },
+            {
+              "name": "the message $ is shown",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the message"
+                },
+                {
+                  "value": "Enjoy your coffee!",
+                  "argumentInfo": {
+                    "parameterName": "message",
+                    "argumentName": "message",
+                    "formattedValue": "Enjoy your coffee!"
+                  }
+                },
+                {
+                  "value": "is shown"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 694021
+            }
+          ],
+          "explicitArguments": [
+            "1",
+            "5",
+            "Enjoy your coffee!"
+          ],
+          "derivedArguments": [
+            "1",
+            "5",
+            "Enjoy your coffee!"
+          ],
+          "status": "SUCCESS",
+          "success": true,
+          "durationInNanos": 4201436
+        }
+      ],
+      "durationInNanos": 20505282
+    }
+  ],
+  "tagMap": {}
+}
